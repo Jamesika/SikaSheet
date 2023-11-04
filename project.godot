@@ -20,7 +20,7 @@ project/assembly_name="DataSheet"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/QuickPluginManager/plugin.cfg", "res://addons/SikaSheet/plugin.cfg")
+enabled=PackedStringArray("res://addons/SikaSheet/plugin.cfg")
 
 [rendering]
 

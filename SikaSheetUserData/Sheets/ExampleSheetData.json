@@ -1,27 +1,27 @@
 [
   {
-    "ID": null,
+    "ID": "id1",
     "IntArray": [],
     "Color": {
-      "R8": 0,
-      "G8": 0,
-      "B8": 0,
-      "A8": 0,
+      "R8": 197,
+      "G8": 59,
+      "B8": 59,
+      "A8": 255,
       "H": 0,
-      "S": 0,
-      "V": 0,
-      "R": 0,
-      "G": 0,
-      "B": 0,
-      "A": 0
+      "S": 0.70050764,
+      "V": 0.77254903,
+      "R": 0.77254903,
+      "G": 0.23137255,
+      "B": 0.23137255,
+      "A": 1
     },
     "EnumA": 0,
-    "EnumB": 0,
+    "EnumB": 1,
     "Texture2D": {
-      "Uid": null,
-      "Path": null
+      "Uid": "uid://mkkc3p537hyw",
+      "Path": "res://icon.svg"
     },
-    "ID2": null,
+    "ID2": "id2",
     "IntField": 0,
     "IntProperty": 0,
     "StringField": null,
@@ -42,7 +42,7 @@
     "Index": 0
   },
   {
-    "ID": null,
+    "ID": "",
     "IntArray": [],
     "Color": {
       "R8": 0,
@@ -58,7 +58,7 @@
       "A": 0
     },
     "EnumA": 0,
-    "EnumB": 0,
+    "EnumB": 1,
     "Texture2D": {
       "Uid": null,
       "Path": null
@@ -85,25 +85,27 @@
   },
   {
     "ID": null,
-    "IntArray": [],
+    "IntArray": [
+      5
+    ],
     "Color": {
-      "R8": 0,
-      "G8": 0,
-      "B8": 0,
-      "A8": 0,
-      "H": 0,
-      "S": 0,
-      "V": 0,
-      "R": 0,
-      "G": 0,
-      "B": 0,
-      "A": 0
+      "R8": 251,
+      "G8": 187,
+      "B8": 36,
+      "A8": 255,
+      "H": 0.11705426,
+      "S": 0.8565737,
+      "V": 0.9843137,
+      "R": 0.9843137,
+      "G": 0.73333335,
+      "B": 0.14117648,
+      "A": 1
     },
     "EnumA": 0,
     "EnumB": 0,
     "Texture2D": {
-      "Uid": null,
-      "Path": null
+      "Uid": "uid://mkkc3p537hyw",
+      "Path": "res://icon.svg"
     },
     "ID2": null,
     "IntField": 0,
@@ -127,25 +129,27 @@
   },
   {
     "ID": null,
-    "IntArray": [],
+    "IntArray": [
+      5
+    ],
     "Color": {
-      "R8": 0,
-      "G8": 0,
-      "B8": 0,
-      "A8": 0,
-      "H": 0,
-      "S": 0,
-      "V": 0,
-      "R": 0,
-      "G": 0,
-      "B": 0,
-      "A": 0
+      "R8": 15,
+      "G8": 171,
+      "B8": 219,
+      "A8": 255,
+      "H": 0.5392157,
+      "S": 0.9315069,
+      "V": 0.85882354,
+      "R": 0.05882353,
+      "G": 0.67058825,
+      "B": 0.85882354,
+      "A": 1
     },
     "EnumA": 0,
-    "EnumB": 0,
+    "EnumB": 3,
     "Texture2D": {
-      "Uid": null,
-      "Path": null
+      "Uid": "uid://mkkc3p537hyw",
+      "Path": "res://icon.svg"
     },
     "ID2": null,
     "IntField": 0,
@@ -184,10 +188,10 @@
       "A": 0
     },
     "EnumA": 0,
-    "EnumB": 0,
+    "EnumB": 3,
     "Texture2D": {
-      "Uid": null,
-      "Path": null
+      "Uid": "uid://mkkc3p537hyw",
+      "Path": "res://icon.svg"
     },
     "ID2": null,
     "IntField": 0,
@@ -226,10 +230,10 @@
       "A": 0
     },
     "EnumA": 0,
-    "EnumB": 0,
+    "EnumB": 2,
     "Texture2D": {
-      "Uid": null,
-      "Path": null
+      "Uid": "uid://mkkc3p537hyw",
+      "Path": "res://icon.svg"
     },
     "ID2": null,
     "IntField": 0,
@@ -268,7 +272,7 @@
       "A": 0
     },
     "EnumA": 0,
-    "EnumB": 0,
+    "EnumB": 4,
     "Texture2D": {
       "Uid": null,
       "Path": null
