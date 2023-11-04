@@ -1,0 +1,106 @@
+[gd_scene load_steps=8 format=3 uid="uid://dc2480q20wq55"]
+
+[ext_resource type="Script" path="res://addons/SikaSheet/Editor/SheetView/SheetView.cs" id="1_3fpbg"]
+[ext_resource type="Script" path="res://addons/SikaSheet/Editor/SheetView/SheetIndexView.cs" id="2_2a2wk"]
+[ext_resource type="Script" path="res://addons/SikaSheet/Editor/SheetView/SheetHeaderView.cs" id="2_bikec"]
+[ext_resource type="Script" path="res://addons/SikaSheet/Editor/SheetView/SheetDataView.cs" id="2_so00m"]
+[ext_resource type="PackedScene" uid="uid://bofbbjsaxkwlg" path="res://addons/SikaSheet/Resources/PackedScenes/sheet_index_cell.tscn" id="3_nn4l7"]
+[ext_resource type="PackedScene" uid="uid://bs8hqyoeo685g" path="res://addons/SikaSheet/Resources/PackedScenes/sheet_data_cell.tscn" id="5_f155h"]
+[ext_resource type="PackedScene" uid="uid://bg8wjiilk8gix" path="res://addons/SikaSheet/Resources/PackedScenes/sheet_column_header_cell.tscn" id="5_we34p"]
+
+[node name="SheetView" type="Panel" node_paths=PackedStringArray("_dataView", "_headerView", "_indexView")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+script = ExtResource("1_3fpbg")
+_dataView = NodePath("HSplitContainer/VSplitContainer/SheetDataView")
+_headerView = NodePath("HSplitContainer/VSplitContainer/SheetHeaderView")
+_indexView = NodePath("HSplitContainer/VSplitContainer2/SheetIndexView")
+
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+dragger_visibility = 2
+
+[node name="VSplitContainer2" type="VSplitContainer" parent="HSplitContainer"]
+layout_mode = 2
+dragger_visibility = 2
+
+[node name="Empty" type="Control" parent="HSplitContainer/VSplitContainer2"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 99)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="SheetIndexView" type="Control" parent="HSplitContainer/VSplitContainer2" node_paths=PackedStringArray("_contentRoot", "_content")]
+clip_contents = true
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("2_2a2wk")
+_contentRoot = NodePath("VBoxContainer")
+_content = NodePath("VBoxContainer/Content")
+_sheetCellPackedScene = ExtResource("3_nn4l7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer/VSplitContainer2/SheetIndexView"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 254.0
+grow_horizontal = 2
+
+[node name="Content" type="Control" parent="HSplitContainer/VSplitContainer2/SheetIndexView/VBoxContainer"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="VSplitContainer" type="VSplitContainer" parent="HSplitContainer"]
+layout_mode = 2
+dragger_visibility = 2
+
+[node name="SheetHeaderView" type="Control" parent="HSplitContainer/VSplitContainer" node_paths=PackedStringArray("_content")]
+clip_contents = true
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("2_bikec")
+_content = NodePath("Content")
+_headerCellPackedScene = ExtResource("5_we34p")
+
+[node name="Content" type="Control" parent="HSplitContainer/VSplitContainer/SheetHeaderView"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="SheetDataView" type="Control" parent="HSplitContainer/VSplitContainer" node_paths=PackedStringArray("_scrollContainer", "_content")]
+clip_contents = true
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("2_so00m")
+_scrollContainer = NodePath("ScrollContainer")
+_content = NodePath("ScrollContainer/Content")
+_sheetDataCellPackedScene = ExtResource("5_f155h")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HSplitContainer/VSplitContainer/SheetDataView"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Content" type="Control" parent="HSplitContainer/VSplitContainer/SheetDataView/ScrollContainer"]
+custom_minimum_size = Vector2(2000, 2000)
+layout_mode = 2
+mouse_filter = 1

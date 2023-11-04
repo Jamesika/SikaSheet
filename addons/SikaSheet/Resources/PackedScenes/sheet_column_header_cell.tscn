@@ -1,0 +1,73 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg8wjiilk8gix"]
+
+[ext_resource type="Script" path="res://addons/SikaSheet/Editor/SheetCells/SheetColumnHeaderCell.cs" id="1_mk75v"]
+[ext_resource type="Texture2D" uid="uid://bq224w2y3dmm1" path="res://addons/SikaSheet/Resources/Icons/warning.svg" id="2_ki4i5"]
+
+[node name="SheetColumnHeaderCell" type="MarginContainer" node_paths=PackedStringArray("_fieldLabel", "_fieldPrefixLabel", "_typeLabel", "_menuButton", "_warningRoot", "_warningIcon")]
+script = ExtResource("1_mk75v")
+_fieldLabel = NodePath("MarginContainer/FieldNameLabel")
+_fieldPrefixLabel = NodePath("ExtraLabel")
+_typeLabel = NodePath("TypeLabel")
+_menuButton = NodePath("MenuButton")
+_warningRoot = NodePath("WarningRoot")
+_warningIcon = NodePath("WarningRoot/WarningTextureRect")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(1, 1, 1, 0.0784314)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 14
+
+[node name="FieldNameLabel" type="Label" parent="MarginContainer"]
+layout_mode = 2
+text = "Field Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExtraLabel" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.533333, 0.533333, 0.533333, 1)
+theme_override_font_sizes/font_size = 12
+text = "Asas[2]."
+
+[node name="TypeLabel" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.533333, 0.533333, 0.533333, 1)
+theme_override_font_sizes/font_size = 12
+text = "Array | uint"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="MenuButton" type="MenuButton" parent="."]
+layout_mode = 2
+mouse_filter = 1
+button_mask = 2
+
+[node name="WarningRoot" type="Control" parent="."]
+layout_mode = 2
+
+[node name="WarningTextureRect" type="TextureRect" parent="WarningRoot"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -22.0
+offset_right = 22.0
+offset_bottom = -2.0
+grow_vertical = 0
+texture = ExtResource("2_ki4i5")

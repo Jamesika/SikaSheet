@@ -1,0 +1,296 @@
+[
+  {
+    "ID": null,
+    "IntArray": [],
+    "Color": {
+      "R8": 0,
+      "G8": 0,
+      "B8": 0,
+      "A8": 0,
+      "H": 0,
+      "S": 0,
+      "V": 0,
+      "R": 0,
+      "G": 0,
+      "B": 0,
+      "A": 0
+    },
+    "EnumA": 0,
+    "EnumB": 0,
+    "Texture2D": {
+      "Uid": null,
+      "Path": null
+    },
+    "ID2": null,
+    "IntField": 0,
+    "IntProperty": 0,
+    "StringField": null,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "NestedData": {
+      "IntArray": null,
+      "IntField": 0,
+      "StringField": null,
+      "Vector2Field": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "NestedDataArray": [],
+    "Index": 0
+  },
+  {
+    "ID": null,
+    "IntArray": [],
+    "Color": {
+      "R8": 0,
+      "G8": 0,
+      "B8": 0,
+      "A8": 0,
+      "H": 0,
+      "S": 0,
+      "V": 0,
+      "R": 0,
+      "G": 0,
+      "B": 0,
+      "A": 0
+    },
+    "EnumA": 0,
+    "EnumB": 0,
+    "Texture2D": {
+      "Uid": null,
+      "Path": null
+    },
+    "ID2": null,
+    "IntField": 0,
+    "IntProperty": 0,
+    "StringField": null,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "NestedData": {
+      "IntArray": null,
+      "IntField": 0,
+      "StringField": null,
+      "Vector2Field": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "NestedDataArray": [],
+    "Index": 1
+  },
+  {
+    "ID": null,
+    "IntArray": [],
+    "Color": {
+      "R8": 0,
+      "G8": 0,
+      "B8": 0,
+      "A8": 0,
+      "H": 0,
+      "S": 0,
+      "V": 0,
+      "R": 0,
+      "G": 0,
+      "B": 0,
+      "A": 0
+    },
+    "EnumA": 0,
+    "EnumB": 0,
+    "Texture2D": {
+      "Uid": null,
+      "Path": null
+    },
+    "ID2": null,
+    "IntField": 0,
+    "IntProperty": 0,
+    "StringField": null,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "NestedData": {
+      "IntArray": null,
+      "IntField": 0,
+      "StringField": null,
+      "Vector2Field": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "NestedDataArray": [],
+    "Index": 2
+  },
+  {
+    "ID": null,
+    "IntArray": [],
+    "Color": {
+      "R8": 0,
+      "G8": 0,
+      "B8": 0,
+      "A8": 0,
+      "H": 0,
+      "S": 0,
+      "V": 0,
+      "R": 0,
+      "G": 0,
+      "B": 0,
+      "A": 0
+    },
+    "EnumA": 0,
+    "EnumB": 0,
+    "Texture2D": {
+      "Uid": null,
+      "Path": null
+    },
+    "ID2": null,
+    "IntField": 0,
+    "IntProperty": 0,
+    "StringField": null,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "NestedData": {
+      "IntArray": null,
+      "IntField": 0,
+      "StringField": null,
+      "Vector2Field": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "NestedDataArray": [],
+    "Index": 3
+  },
+  {
+    "ID": null,
+    "IntArray": [],
+    "Color": {
+      "R8": 0,
+      "G8": 0,
+      "B8": 0,
+      "A8": 0,
+      "H": 0,
+      "S": 0,
+      "V": 0,
+      "R": 0,
+      "G": 0,
+      "B": 0,
+      "A": 0
+    },
+    "EnumA": 0,
+    "EnumB": 0,
+    "Texture2D": {
+      "Uid": null,
+      "Path": null
+    },
+    "ID2": null,
+    "IntField": 0,
+    "IntProperty": 0,
+    "StringField": null,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "NestedData": {
+      "IntArray": null,
+      "IntField": 0,
+      "StringField": null,
+      "Vector2Field": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "NestedDataArray": [],
+    "Index": 4
+  },
+  {
+    "ID": null,
+    "IntArray": [],
+    "Color": {
+      "R8": 0,
+      "G8": 0,
+      "B8": 0,
+      "A8": 0,
+      "H": 0,
+      "S": 0,
+      "V": 0,
+      "R": 0,
+      "G": 0,
+      "B": 0,
+      "A": 0
+    },
+    "EnumA": 0,
+    "EnumB": 0,
+    "Texture2D": {
+      "Uid": null,
+      "Path": null
+    },
+    "ID2": null,
+    "IntField": 0,
+    "IntProperty": 0,
+    "StringField": null,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "NestedData": {
+      "IntArray": null,
+      "IntField": 0,
+      "StringField": null,
+      "Vector2Field": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "NestedDataArray": [],
+    "Index": 5
+  },
+  {
+    "ID": null,
+    "IntArray": [],
+    "Color": {
+      "R8": 0,
+      "G8": 0,
+      "B8": 0,
+      "A8": 0,
+      "H": 0,
+      "S": 0,
+      "V": 0,
+      "R": 0,
+      "G": 0,
+      "B": 0,
+      "A": 0
+    },
+    "EnumA": 0,
+    "EnumB": 0,
+    "Texture2D": {
+      "Uid": null,
+      "Path": null
+    },
+    "ID2": null,
+    "IntField": 0,
+    "IntProperty": 0,
+    "StringField": null,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "NestedData": {
+      "IntArray": null,
+      "IntField": 0,
+      "StringField": null,
+      "Vector2Field": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "NestedDataArray": [],
+    "Index": 6
+  }
+]

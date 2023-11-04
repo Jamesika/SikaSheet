@@ -1,0 +1,29 @@
+[
+  {
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 0
+  },
+  {
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 1
+  },
+  {
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 2
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "ID": null,
+    "ResourceA": {
+      "Uid": "uid://mkkc3p537hyw",
+      "Path": "res://icon.svg"
+    },
+    "ResourceB": {
+      "Uid": null,
+      "Path": null
+    },
+    "Index": 0
+  },
+  {
+    "ID": null,
+    "ResourceA": {
+      "Uid": "uid://mkkc3p537hyw",
+      "Path": "res://icon.svg"
+    },
+    "ResourceB": {
+      "Uid": null,
+      "Path": null
+    },
+    "Index": 1
+  },
+  {
+    "ID": null,
+    "ResourceA": {
+      "Uid": null,
+      "Path": null
+    },
+    "ResourceB": {
+      "Uid": null,
+      "Path": null
+    },
+    "Index": 2
+  },
+  {
+    "ID": null,
+    "ResourceA": {
+      "Uid": null,
+      "Path": null
+    },
+    "ResourceB": {
+      "Uid": null,
+      "Path": null
+    },
+    "Index": 3
+  }
+]

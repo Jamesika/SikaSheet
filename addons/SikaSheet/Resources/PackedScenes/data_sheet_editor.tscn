@@ -1,0 +1,233 @@
+[gd_scene load_steps=4 format=3 uid="uid://wjv3furk0q7m"]
+
+[ext_resource type="Script" path="res://addons/SikaSheet/Editor/DataSheetEditor.cs" id="1_ux51l"]
+[ext_resource type="Texture2D" uid="uid://d3ur41bo467rk" path="res://addons/SikaSheet/Resources/Icons/sheet_icon.png" id="3_clefh"]
+[ext_resource type="PackedScene" uid="uid://dc2480q20wq55" path="res://addons/SikaSheet/Resources/PackedScenes/sheet_view.tscn" id="8_guq05"]
+
+[node name="DataSheetEditor" type="Control" node_paths=PackedStringArray("_sheetsItemTree", "_sheetView", "_hasSheetRoot", "_emptySheetRoot", "_mainMenuButton", "_historyLabel", "_sheetClassNameLabel", "_sheetBaseClassNameLabel", "_addRowButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_ux51l")
+_sheetsItemTree = NodePath("MarginContainer/HSplitContainer/FilesMarginContainer/VSplitContainer/TreePanel/Tree")
+_sheetView = NodePath("MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/SheetView")
+_hasSheetRoot = NodePath("MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot")
+_emptySheetRoot = NodePath("MarginContainer/HSplitContainer/SheetMarginContainer/NoSheetRoot")
+_mainMenuButton = NodePath("MarginContainer/HSplitContainer/FilesMarginContainer/VSplitContainer/OptionPanel/MainMenuButton")
+_historyLabel = NodePath("MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel/Panel/HistoryLabel")
+_sheetClassNameLabel = NodePath("MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel/Panel/MarginContainer/HBoxContainer/ClassLabel")
+_sheetBaseClassNameLabel = NodePath("MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel/Panel/MarginContainer/HBoxContainer/BaseClassLabel")
+_addRowButton = NodePath("MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel/PageHBoxContainer/AddRowButton")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="FilesMarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="VSplitContainer" type="VSplitContainer" parent="MarginContainer/HSplitContainer/FilesMarginContainer"]
+layout_mode = 2
+dragger_visibility = 1
+
+[node name="OptionPanel" type="Panel" parent="MarginContainer/HSplitContainer/FilesMarginContainer/VSplitContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="MainMenuButton" type="MenuButton" parent="MarginContainer/HSplitContainer/FilesMarginContainer/VSplitContainer/OptionPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Menu"
+item_count = 12
+popup/item_0/text = "Undo"
+popup/item_0/id = 1
+popup/item_1/text = "Redo"
+popup/item_1/id = 2
+popup/item_2/text = "Enable quick delete"
+popup/item_2/id = 3
+popup/item_3/text = "Generate code for SheetReaders"
+popup/item_3/id = 4
+popup/item_4/text = "Undo"
+popup/item_4/id = 1
+popup/item_5/text = "Redo"
+popup/item_5/id = 2
+popup/item_6/text = "Enable quick delete"
+popup/item_6/id = 3
+popup/item_7/text = "Generate code for SheetReaders"
+popup/item_7/id = 4
+popup/item_8/text = "Undo"
+popup/item_8/id = 1
+popup/item_9/text = "Redo"
+popup/item_9/id = 2
+popup/item_10/text = "Enable quick delete"
+popup/item_10/id = 3
+popup/item_11/text = "Generate code for SheetReaders"
+popup/item_11/id = 4
+
+[node name="TreePanel" type="Panel" parent="MarginContainer/HSplitContainer/FilesMarginContainer/VSplitContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Tree" type="Tree" parent="MarginContainer/HSplitContainer/FilesMarginContainer/VSplitContainer/TreePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SheetMarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer"]
+layout_mode = 2
+
+[node name="SheetRoot" type="VSplitContainer" parent="MarginContainer/HSplitContainer/SheetMarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+dragger_visibility = 1
+
+[node name="HeaderPanel" type="HSplitContainer" parent="MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_constants/separation = 0
+dragger_visibility = 1
+
+[node name="Panel" type="Panel" parent="MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel/Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.0
+offset_right = 237.0
+offset_bottom = 15.0
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="ClassLabel" type="Label" parent="MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel/Panel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "Data Sheet Name"
+vertical_alignment = 1
+
+[node name="BaseClassLabel" type="Label" parent="MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel/Panel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.392157)
+text = " -> BaseClass"
+vertical_alignment = 1
+
+[node name="HistoryLabel" type="Label" parent="MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel/Panel"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -238.0
+offset_top = -26.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 0.392157)
+theme_override_font_sizes/font_size = 12
+text = "History : 5"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PageHBoxContainer" type="HBoxContainer" parent="MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel"]
+layout_mode = 2
+alignment = 2
+
+[node name="AddRowButton" type="Button" parent="MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot/HeaderPanel/PageHBoxContainer"]
+layout_mode = 2
+text = "Add Row"
+
+[node name="SheetView" parent="MarginContainer/HSplitContainer/SheetMarginContainer/SheetRoot" instance=ExtResource("8_guq05")]
+layout_mode = 2
+
+[node name="NoSheetRoot" type="Control" parent="MarginContainer/HSplitContainer/SheetMarginContainer"]
+layout_mode = 2
+
+[node name="Version" type="Label" parent="MarginContainer/HSplitContainer/SheetMarginContainer/NoSheetRoot"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -483.0
+offset_top = 16.68
+offset_right = 483.0
+offset_bottom = 116.68
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 40
+text = "SikaSheet v1.0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tips" type="Label" parent="MarginContainer/HSplitContainer/SheetMarginContainer/NoSheetRoot"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -483.0
+offset_top = 101.0
+offset_right = 483.0
+offset_bottom = 201.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.621524, 0.621524, 0.621524, 1)
+theme_override_font_sizes/font_size = 20
+text = "👈Double click to select a sheet!"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HSplitContainer/SheetMarginContainer/NoSheetRoot"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -77.0
+offset_right = 16.0
+offset_bottom = -44.9999
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(6, 6)
+pivot_offset = Vector2(16, 16)
+texture = ExtResource("3_clefh")
+stretch_mode = 5

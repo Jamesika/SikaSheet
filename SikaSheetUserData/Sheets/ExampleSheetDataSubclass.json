@@ -1,0 +1,101 @@
+[
+  {
+    "StringField": null,
+    "BoolField": false,
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 0
+  },
+  {
+    "StringField": null,
+    "BoolField": false,
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 1
+  },
+  {
+    "StringField": null,
+    "BoolField": true,
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 2
+  },
+  {
+    "StringField": null,
+    "BoolField": true,
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 3
+  },
+  {
+    "StringField": null,
+    "BoolField": true,
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 4
+  },
+  {
+    "StringField": null,
+    "BoolField": true,
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 5
+  },
+  {
+    "StringField": null,
+    "BoolField": true,
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 6
+  },
+  {
+    "StringField": null,
+    "BoolField": false,
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 7
+  },
+  {
+    "StringField": null,
+    "BoolField": false,
+    "ID": null,
+    "IntField": 0,
+    "Vector2Field": {
+      "X": 0,
+      "Y": 0
+    },
+    "Index": 8
+  }
+]

@@ -1,0 +1,114 @@
+// This file is automaticlly generated
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Godot;
+
+namespace SikaSheet
+{
+	public {Abstract} class {DataName}SheetReader : RuntimeSheetReader<{DataName}>
+	{
+		private static {DataName}SheetReader _instance;
+	
+		private static {DataName}SheetReader Instance {
+			get
+			{
+				if (_instance != null)
+					_instance.EnsureSheetDataNotDirty();
+				else
+					_instance = CreateInstance();	
+
+				return _instance;
+			}
+		}
+
+		private Dictionary<{KeyTuple}, {DataName}> _keyToData = new Dictionary<{KeyTuple}, {DataName}>();
+
+		/// <summary>
+		/// include self data list and data list from all subclasses
+		/// </summary>
+		private List<{DataName}> _allSheetDataList;
+
+		private static {DataName}SheetReader CreateInstance()
+		{
+			var instance = new {DataName}SheetReader(typeof({DataName}));
+			instance.ReadSheet();
+			return instance;
+		}
+
+		public {DataName}SheetReader(Type sheetDataType) : base(sheetDataType)
+		{
+		}
+
+		private static bool IsKeyEquals({DataName} data, {KeyDefineList})
+		{
+			return {CheckKeyEqualsData};
+		}
+
+		private {DataName} GetImpl({KeyDefineList})
+		{
+			var key = {CreateKeyTuple};
+			if (Equals(key, null))
+			{   
+				SheetLogger.LogError("{DataName} try to get data with null Key!");
+				return null;
+			}
+
+			if (_keyToData.TryGetValue(key, out var value))
+				return value;
+
+			var allSheetDataList = GetAllSheetDataImpl();
+			foreach (var sheetData in allSheetDataList)
+			{
+				if (IsKeyEquals(sheetData, {KeyList}))
+				{
+					_keyToData.Add(key, sheetData);
+					return sheetData;
+				}
+			}
+
+			return null;
+		}
+
+		public static {DataName} Get({KeyDefineList})
+		{
+			var data = Instance.GetImpl({KeyList});
+			if (data == null)
+				SheetLogger.LogError($"{DataName} get data failed, key : {KeyToStringList}");
+
+			return data;
+		}
+
+		private List<{DataName}> GetAllSheetDataImpl()
+		{
+			if (_allSheetDataList != null && _allSheetDataList.Count > 0)
+				return _allSheetDataList;
+
+			_allSheetDataList = new List<{DataName}>();
+			if(Instance != null)
+				_allSheetDataList.AddRange(Instance.RowDataListT);
+
+{GetSubTables}
+
+			return _allSheetDataList;
+		}
+
+		public static List<{DataName}> GetAll()
+		{
+			return Instance.GetAllSheetDataImpl();
+		}
+
+		public static bool TryGet({KeyDefineList}, out {DataName} data)
+		{
+			data = Instance.GetImpl({KeyList});
+			return data != null;
+		}
+
+		protected override void ClearCache()
+		{
+			base.ClearCache();
+			_allSheetDataList = null;
+			_keyToData.Clear();
+		}
+	}
+}
