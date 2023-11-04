@@ -27,7 +27,7 @@ Define Data & Edit Data & Read Data All in one.
 - Undo/Redo
 - Group sheets using Attribute `[SheetGroup("GroupName")]`  
 ![image](https://github.com/Jamesika/SikaSheet/assets/23502082/06d5a663-fbfa-4a4a-8630-c4cd1c078c91)
-- Generate sheet reader data for a sheet.
+- Generate C# class SheetReader for a sheet.
 - Define keys for a sheet using `[SheetKey(keyIndex)]`, so you can read any data by keys, can define multiple keys.
 - Support sheet data type inheritance, SheetReader of superclass can read all data from Sheets of subclasses.
 
