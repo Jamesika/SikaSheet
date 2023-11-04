@@ -20,7 +20,7 @@ Define Data & Edit Data & Read Data All in one.
   	 	- Vector2I
   	  	- Color
   	- GodotEngine Resource Types
-  		- it's wrapped by struct `ResourceRef<T>`, so we need to define a member like this `ResourceRef<Texture2D>`
+  		- it's wrapped by struct `ResourceRef<T>`, so we need to define a member like this `ResourceRef<Texture2D>`  
   	   	![image](https://github.com/Jamesika/SikaSheet/assets/23502082/098f25ba-d758-4b02-ad14-6b27ba21b81b)
 	- C# Array
  	- Custom data type : must derived from `SheetNestedData`
